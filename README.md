@@ -2,6 +2,16 @@
 
 DeepSeek Harness Windows 桌面客户端的自启设置与托盘助手，v0.2.0。
 
+## 效果预览
+
+实际 Windows 客户端截图：设置页保留两个开关，客户端位置收进高级设置。
+
+![开机自启设置面板](docs/images/settings.png)
+
+托盘提供打开客户端、退出客户端与退出托盘入口。
+
+![Windows 托盘菜单](docs/images/tray-menu.png)
+
 ## 使用
 
 设置 → 开机自启：
