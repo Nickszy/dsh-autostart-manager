@@ -1,0 +1,7 @@
+# Bundle patch layer for dsh-autostart-manager.
+# Host half = package main entry (plain Cordis plugin);
+# dsh.client declaration in package.json makes the web app load ./client.js
+# as the browser half (Settings -> 开机自启 panel).
+- insert:
+    - id: dsh-autostart-manager
+      name: dsh-autostart-manager

@@ -1,0 +1,37 @@
+{
+  "name": "dsh-autostart-manager",
+  "version": "0.2.0",
+  "description": "DeepSeek Harness 桌面客户端开机自启/静默启动管理:设置页开关(启用/停用 + 静默/展示)。Windows 现行,macOS 预留。",
+  "keywords": ["dsh-plugin", "deepseek-harness", "autostart", "startup", "silent", "windows"],
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "check": "node --check index.js && node --check client.js",
+    "test": "node tests/host.test.mjs"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "assets/",
+    "tests/",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT"
+}
