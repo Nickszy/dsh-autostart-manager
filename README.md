@@ -1,6 +1,8 @@
-# dsh-autostart-manager
+# DSH 开机自启
 
-DeepSeek Harness Windows 桌面客户端的自启设置与托盘助手，v0.2.0。
+登录电脑后自动启动 DeepSeek Harness，可选择显示主窗口或收起到托盘。
+
+适用于 Windows 桌面客户端，当前版本 v0.2.0。
 
 ## 效果预览
 
