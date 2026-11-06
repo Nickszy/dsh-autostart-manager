@@ -1,13 +1,13 @@
 {
   "name": "dsh-autostart-manager",
-  "version": "0.2.0",
-  "description": "DeepSeek Harness 桌面客户端开机自启/静默启动管理:设置页开关(启用/停用 + 静默/展示)。Windows 现行,macOS 预留。",
-  "keywords": ["dsh-plugin", "deepseek-harness", "autostart", "startup", "silent", "windows"],
+  "version": "0.3.0",
+  "description": "DSH 开机自启：Windows、macOS、Linux 登录后启动桌面客户端或本机 Web 服务。",
+  "keywords": ["dsh-plugin", "deepseek-harness", "autostart", "startup", "silent", "windows", "macos", "linux", "web"],
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "check": "node --check index.js && node --check client.js",
-    "test": "node tests/host.test.mjs"
+    "check": "node --check index.js && node --check client.js && node --check core.mjs && node --check platforms/entries.mjs && node --check platforms/windows.mjs && node --check assets/web-runner.mjs",
+    "test": "node tests/host.test.mjs && node tests/web-runner.test.mjs"
   },
   "exports": {
     ".": "./index.js",
@@ -17,10 +17,14 @@
   "files": [
     "index.js",
     "client.js",
+    "core.mjs",
+    "platforms/",
     "assets/",
     "tests/",
     "cordis.patch.yml",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md",
+    "docs/images/"
   ],
   "engines": {
     "node": ">=22"
